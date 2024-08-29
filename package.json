@@ -1,0 +1,79 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "author": "Srinivas Madnal",
+  "description": "project to run WebdriverIO tests with Appium to test native applications on iOS and Android",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:filter-digital/test-automation.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "engines": {
+    "node": "^16.13.0 || >=18.0.0"
+  },
+  "keywords": [
+    "WebdriverIO",
+    "WebDriver",
+    "appium",
+    "hybrid",
+    "android",
+    "ios"
+  ],
+  "type": "module",
+  "scripts": {
+    "Android_comment": "Android app config",
+    "android.app": "wdio run config/android/wdio.android.app.conf.ts --platform=APK",
+    "android.app.autolaunch": "wdio run config/wdio.android.app.auto.conf.ts",
+    "Android_browser_comment": "Android browser config",
+    "android.browser": "wdio run config/android/wdio.android.browser.conf.ts",
+    "android.browser.autolaunch": "wdio run config/wdio.android.browser.auto.conf.ts",
+    "android.browser.cuke": "wdio run config/wdio.android.browser.cuke.conf.ts",
+    "Browser_comment": "Chrome browser config with emulated browser",
+    "browser.mobile": "wdio run config/wdio.browser.mobile.conf.ts",
+    "browser.mobile.cuke": "wdio run config/wdio.browser.mobile.cuke.conf.ts",
+    "iOS_comment": "iOS app config(not working at the moment)",
+    "ios.app": "wdio run config/wdio.ios.app.conf.ts",
+    "iOS_browser_comment": "iOS safari config",
+    "ios.browser": "wdio run config/ios/wdio.ios.browser.conf.ts",
+    "ios.browser.cuke": "wdio run config/wdio.ios.browser.cuke.conf.ts",
+    "App_manager_comment": "App manager test config with Chrome browser",
+    "browser": "wdio run config/wdio.browser.conf.ts",
+    "browser.cuke": "wdio run config/wdio.browser.cuke.conf.ts",
+    "BS_comment": "Android browser config with BrowserStack",
+    "android.browserstack.browser": "wdio run ./config/browserstack/wdio.android.bs.chrome.conf.ts",
+    "lint": "eslint tests",
+    "report": "allure generate --clean allure-results; allure open"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "@wdio/appium-service": "^8.36.1",
+    "@wdio/browserstack-service": "^8.39.0",
+    "@wdio/cli": "^8.36.1",
+    "@wdio/cucumber-framework": "^8.38.2",
+    "@wdio/globals": "^8.36.1",
+    "@wdio/local-runner": "^8.36.1",
+    "@wdio/mocha-framework": "^8.36.1",
+    "@wdio/spec-reporter": "^8.36.1",
+    "@wdio/types": "^8.38.2",
+    "allure-commandline": "^2.30.0",
+    "appium": "^2.5.4",
+    "appium-chromium-driver": "^1.3.24",
+    "appium-uiautomator2-driver": "^3.3.0",
+    "appium-xcuitest-driver": "^7.18.0",
+    "chalk": "^5.3.0",
+    "chromedriver": "^126.0.4",
+    "eslint-plugin-wdio": "^8.24.12",
+    "minimist": "^1.2.8",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.0.4"
+  }
+}

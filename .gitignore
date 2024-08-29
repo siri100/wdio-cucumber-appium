@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+.DS_Store
+.idea
+allure-report
+allure-results
+app

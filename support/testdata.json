@@ -1,0 +1,11 @@
+{
+   "tablesTestData" : {
+    "tablesUrl" : "https://ca.test.oandp.fdclients.co.uk/venue/pubs/9981/tables",
+    "tablesPageTitle" : "Please enter your table number.",
+    "tableNumber" : 44,
+    "selectedTableTitle" : "allergens and nutrition"
+   },
+   "welcomePageTestData":{
+    "welcomePageTitle" : "Welcome to the"
+   }
+}
